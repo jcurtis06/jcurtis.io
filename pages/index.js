@@ -53,8 +53,8 @@ export default function Home() {
       <footer>
         <div className='flex flex-row items-center justify-center pb-12'>
           <a className='mr-5' href='https://www.github.com/jcurtis06' target={"_blank"}>GitHub</a>
-          <a className='mr-5' href='github.com/jcurtis06' target={"_blank"}>Tutorials</a>
-          <a className='mr-5' href='github.com/jcurtis06' target={"_blank"}>Blog</a>
+          <a className='mr-5' href='/tutorials'>Tutorials</a>
+          <a className='mr-5' href='github.com/jcurtis06' target={"_blank"}>Contact</a>
         </div>
       </footer>
     </div>
