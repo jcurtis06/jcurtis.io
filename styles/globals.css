@@ -1,9 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Archivo&display=swap');
 
-* {
+body {
     font-family: 'Archivo', sans-serif;
 }
 

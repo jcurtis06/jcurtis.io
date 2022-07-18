@@ -1,0 +1,41 @@
+.wrapper {
+    @apply min-h-screen;
+    @apply items-center;
+    @apply flex;
+    @apply flex-col;
+    @apply py-24;
+    background: linear-gradient(45deg,#06080a, #081e26, #09151b , #081e26);
+    background-size: 700% 100%;
+    background-position: 0%;
+    color: rgb(250, 235, 235);
+}
+
+.content {
+    max-width: 36rem;
+    padding-top: 6rem;
+}
+
+.content section {
+    @apply pt-12;
+    @apply grid;
+    @apply grid-cols-auto;
+}
+
+.content h2 {
+    @apply font-serif;
+    @apply italic;
+    @apply text-slate-400;
+    @apply font-medium;
+}
+
+.content code {
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+.content pre {
+    margin-top: 2rem;
+    background-color: #09151b;
+    box-shadow: 1px 1px 1rem rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    padding: 1rem 1rem 1rem 1rem;
+}

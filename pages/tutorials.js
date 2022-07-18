@@ -1,6 +1,7 @@
 import Head from "next/head"
+import Link from "next/link";
 
-export default function Tutorials() {
+export default function Tutorials(props) {
     return (
         <div className='bg-gradient-to-br from-gray-800 to-black text-slate-50 min-h-screen'>
             <Head>
@@ -16,7 +17,59 @@ export default function Tutorials() {
                     <h1 className='text-2xl font-bold'>Tutorials</h1>
                     <h2 className='mt-2'>Learn Something New</h2>
                 </section>
+                <section className="grid grid-cols-1 md:grid-cols-2 gap-5 pt-32">
+                    {props.tutorials.map((tutorial, idx) => {
+                        return (
+                            <div className="bg-slate-800 rounded w-64 drop-shadow-xl shadow-black p-4">
+                                <Link href={`/tutorials/${tutorial.slug}`}>
+                                    <h2 className="text-xl text-blue-700 hover:cursor-pointer">{tutorial.title}</h2>
+                                </Link>
+                                <p className="text-slate-400">{tutorial.description}</p>
+                            </div>
+                        )
+                    })}
+                </section>
             </main>
+            {/*}
+            <h1>Tutorials</h1>
+            <ul>
+                {props.tutorials.map((tutorial, idx) => {
+                    return (
+                        <li key={tutorial.id}>
+                            <Link href={`/tutorials/${tutorial.slug}`}>
+                                <a>{tutorial.title}</a>
+                            </Link>
+                        </li>
+                    )
+                })}
+            </ul>
+            {*/}
         </div>
     )
+}
+
+export async function getStaticProps() {
+    const fs = require('fs');
+    const matter = require('gray-matter');
+    const { v4: uuid } = require('uuid');
+
+    const files = fs.readdirSync(`${process.cwd()}/contents`, "utf-8");
+
+    const tutorials = files
+        .filter((fn) => fn.endsWith(".md"))
+        .map((fn) => {
+            const path = `${process.cwd()}/contents/${fn}`;
+            const rawContent = fs.readFileSync(path, {
+                encoding: "utf-8",
+            });
+            const { data } = matter(rawContent);
+
+            return { ...data, id: uuid() };
+        });
+    
+    console.log(tutorials);
+    
+    return {
+        props: { tutorials },
+    };
 }

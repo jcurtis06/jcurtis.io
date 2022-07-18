@@ -1,0 +1,32 @@
+.hljs {
+    color: rgb(245, 245, 133);
+}
+
+.language-js {
+    font-size: 18px;
+}
+
+.hljs-keyword {
+    color: #9CDCFE;
+}
+
+.hljs-title {
+    color: #DCDCAA;
+}
+
+.hljs-variable {
+    color: #4EC9B0;
+    font-weight: bolder;
+}
+
+.hljs-string {
+    color: #29ac64;
+}
+
+.hljs-number {
+    color: #FF73FD;
+}
+
+.hljs-params {
+    color: #9CDCFE;
+}
