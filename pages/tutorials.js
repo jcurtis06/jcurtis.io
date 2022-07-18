@@ -17,7 +17,7 @@ export default function Tutorials(props) {
                 <section className="grid grid-cols-1 md:grid-cols-2 gap-5 pt-32">
                     {props.tutorials.map((tutorial, idx) => {
                         return (
-                            <div className="bg-slate-800 rounded w-64 drop-shadow-xl shadow-black p-4">
+                            <div key={idx} className="bg-slate-800 rounded w-64 drop-shadow-xl shadow-black p-4">
                                 <Link href={`/tutorials/${tutorial.slug}`}>
                                     <h2 className="text-xl text-blue-700 hover:cursor-pointer">{tutorial.title}</h2>
                                 </Link>

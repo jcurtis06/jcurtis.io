@@ -39,7 +39,7 @@ export default function Home() {
             <p>A complete game of Minesweeper, written in pure HTML, CSS, and JS.</p>
             <br></br>
             <p><a href='https://github.com/jcurtis06/Jadot' target={"_blank"} rel={"noreferrer"}>Jadot</a></p>
-            <p>A simple game engine written in Java featuring a node-based system similar to <a target={"_blank"} href='https://www.godotengine.org'>Godot&apos;s</a>. The game engine also has support for animations, collisions, input, and more.</p>
+            <p>A simple game engine written in Java featuring a node-based system similar to <a target={"_blank"} rel={"noreferrer"} href='https://www.godotengine.org'>Godot&apos;s</a>. The game engine also has support for animations, collisions, input, and more.</p>
             <br></br>
             <p><a href='https://tetrjs.netlify.app/' target={"_blank"} rel={"noreferrer"}>Tetrjs</a></p>
             <p>Tetrjs is a complete Tetris game made in HTML, CSS, and JS. I also made a version in React.</p>
