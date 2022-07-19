@@ -6,6 +6,10 @@
     font-size: 18px;
 }
 
+.hljs-comment {
+    color: rgb(77, 77, 77);
+}
+
 .hljs-keyword {
     color: #9CDCFE;
 }

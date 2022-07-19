@@ -32,7 +32,7 @@ export default function Home() {
         <section className='pt-12 grid grid-rows-auto md:grid-cols-auto text-base max-w-xl'>
           <p className='text-slate-400 font-serif italic font-light'>Projects</p>
           <div className='md:text-base text-sm'>
-            <p><a href='https://github.com/jcurtis06/Jadot' target={"_blank"} rel={"noreferrer"}>Java Calculator</a></p>
+            <p><a href='https://github.com/jcurtis06/JavaCalculator' target={"_blank"} rel={"noreferrer"}>Java Calculator</a></p>
             <p >A semi-advanced calculator capable of solving problems with parenthesis.</p>
             <br></br>
             <p><a href='https://jcurtis06.github.io/minesweeper/' target={"_blank"} rel={"noreferrer"}>Minesweeper</a></p>

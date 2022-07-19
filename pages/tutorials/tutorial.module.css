@@ -29,6 +29,7 @@
     @apply md:gap-0;
     @apply grid-rows-auto;
     @apply gap-4;
+    @apply mt-12;
 }
 
 .content h2 {
@@ -51,4 +52,10 @@
     border-radius: 12px;
     @apply p-0.5;
     @apply md:p-1;
+}
+
+.content img {
+    @apply rounded;
+    @apply mt-8;
+    box-shadow: 1px 1px 1rem rgba(0, 0, 0, 0.5);
 }
