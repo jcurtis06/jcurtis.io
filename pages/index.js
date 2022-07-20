@@ -42,7 +42,7 @@ export default function Home() {
             <p>A simple game engine written in Java featuring a node-based system similar to <a target={"_blank"} rel={"noreferrer"} href='https://www.godotengine.org'>Godot&apos;s</a>. The game engine also has support for animations, collisions, input, and more.</p>
             <br></br>
             <p><a href='https://tetrjs.netlify.app/' target={"_blank"} rel={"noreferrer"}>Tetrjs</a></p>
-            <p>Tetrjs is a complete Tetris game made in HTML, CSS, and JS. I also made a version in React.</p>
+            <p>Tetrjs is a complete Tetris game made in HTML, CSS, and JS. I also made a version in React that can be seen <a href='https://github.com/jcurtis06/retris' target={"_blank"} rel={"noreferrer"}>here</a>.</p>
             <br></br>
             <p><a href='https://tetrjs.netlify.app/' target={"_blank"} rel={"noreferrer"}>This Website</a></p>
             <p>Created in Next.js with TailwindCSS</p>
